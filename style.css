@@ -11,24 +11,23 @@ body {
 
 
 header {
-    /*
-    background-color: rgb(248, 248, 248); /* ta bort */
-    
+    background-color: rgb(241, 238, 238);
     align-items: center;
     width: 100%;
-    height: 5rem;
-    position: absolute;
+    height: 4rem;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;    
+    overflow-y: hidden;
 }
 
 main {
     /*
     background-color: honeydew; /*ta bort*/
-    height: 100vh;
-    padding-top: 10rem;
-    
+    width: 100%;
+    height: 300vh;
+    padding-top: 5rem; 
 }
 
 
@@ -41,25 +40,25 @@ main {
 .column {
     flex-direction: column;
 }
+.center {
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+}
 
 
 /* header klasser */
+.menu {
+    display: none;
+    
+}
 
 nav ul li {
     justify-content: flex-end; 
     
 }
-
-.fas.fa-ellipsis-v {
-
-    display: none ;
-    margin-top: 1rem;
-    color: rgb(41, 40, 40);
-    font-size: 2rem;
-  }
-
 .margin {
-    margin: 1.5rem;
+    margin: 1rem;
 }
 .space {
     justify-content: flex-end;
@@ -83,12 +82,6 @@ nav ul li {
     margin-right: 0;
 }
 
-.skanor img {
-    width: 35rem;
-    height: 25rem;
-    object-fit: cover;
-}
-
 .nav-links {
     text-decoration: none;
     color: rgb(20, 20, 20);
@@ -98,7 +91,31 @@ nav ul li {
     justify-content: center;
 }
 
+
+/* DROPDOWN HEADER */
+
+.fas.fa-ellipsis-v {
+
+    /*display: block;*/
+    margin-top: 1rem;
+    color: rgb(41, 40, 40);
+    font-size: 2rem;
+}
+.hideThis{
+    overflow-y: hidden;
+}
+
+
 /* MAIN KLASSER */
+
+.imgTop {
+    width: 100%;
+    height: auto;
+}
+
+.mainWidth {
+    width: 50%;
+}
 
 .mainCenterWidth {
     
@@ -106,14 +123,22 @@ nav ul li {
     text-align: center;
 }
 
+.mainPaddingTop {
+    padding-top: 9rem;
+}
+
 /* SE TILL ATT SIDAN ÄR RESPONSIV! */
+
 @media (max-width: 800px) {
    
     .fas.fa-ellipsis-v {
         display: unset;
     }
-
+    .menu {
+        display: unset;
+    }
     nav ul li {
         display: none;
     }
+
 }
