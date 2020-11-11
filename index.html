@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/53610cf1b6.js" crossorigin="anonymous"></script>
     <title>Mn - welcome</title>
@@ -12,38 +12,53 @@
 <body>
     <header>
         <div class="flex">
-            <div class=" width margin fonts">
+            <div class="width margin fonts">
                 <h4>MALIN WEDIN</h4>
             </div>
             <nav class="width">
                 <ul class="space flex margin list">
-                    <li id="" class=" paddingHeader"><a class="nav-links" href="#aboutMe">Om mig</a></li>
-                    <li id="" class=" paddingHeader"> <a class="nav-links" href="#freeTime">Intressen</a></li>
-                    <li class=" paddingHeader"><a class="nav-links" href="#contact">Kontakt</a></li>
+                    <li id="" class="paddingHeader"><a class="nav-links" href="#aboutMe">OM MIG</a></li>
+                    <li id="" class="paddingHeader"> <a class="nav-links" href="#freeTime">MIN FRITID</a></li>
+                    <li class=" paddingHeader"><a class="nav-links" href="#contact">KONTAKT</a></li>
                 </ul>
             </nav>
-            <div class="margin marginRight"> 
-                <i class="margin fas fa-ellipsis-v"></i>
+            <div class="menu">
+                <div class="flex column margin marginRight hideThis"></div>
+                    <i id="toggleThis" class="fas fa-ellipsis-v"></i>
+                
+                      
+                    <li><a href="#aboutMe">Om mig</a></li>
+                    <li><a href="#freeTime">Om mig</a></li>
+                    <li><a href="#contact">Om mig</a></li>
+                </div>
             </div>
         </div>
     </header>
 
     <main>
-
-        <div class="skanor flex centerImageMain">
-            <img src="./images/skanor.jpg" alt="">
+        <div class="flex center column">
+            <img class="imgTop" src="./images/skanor1.jpg" alt="">
+            <div class="mainWidth">
+                <div id="aboutMe">
+                        <h3 class="mainPaddingTop">OM MIG</h3>
+                        <p>Hej, jag heter Malin Wedin och är en Göteborgsbaserad tjej på 30 år.</p>
+                        <p>Efter 10 år med nya destinationer varje dag så var det dags för något annat.</p>
+                        <p>Nu studerar jag Front end developer på Medieinstitutet och kämpar hårt för att förstå kodens värld</p>
+                </div>
+                <div id="freeTime">
+                    <h3 class="mainPaddingTop">MIN FRITID</h3>
+                    <p>Växter. Fotografi. Måla. Heminredning. Bada.</p>
+                    <p></p>
+                    <p></p>
+                </div>
+                <div id="contact">
+                    <h3 class="mainPaddingTop">KONTAKT</h3>
+                    <p>GitHub</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis culpa fuga consequuntur quibusdam eaque amet eos tempore, placeat ullam distinctio perferendis maxime neque magnam non? Ipsam provident inventore amet natus?</p>
+                </div>
+            </div>
         </div>
-
-        <div id="aboutMe" class="flex width mainCenterWidth">
-                <h3>HEJ</h3>
             
-            <p></p>
-
-        </div>
-        
-
-
-
     </main>
 
     <footer>
