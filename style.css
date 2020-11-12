@@ -95,16 +95,16 @@ nav ul li {
 /* DROPDOWN HEADER */
 
 .fas.fa-ellipsis-v {
-
-    /*display: block;*/
-    margin-top: 1rem;
     color: rgb(41, 40, 40);
     font-size: 2rem;
+    
 }
 .hideThis{
     overflow-y: hidden;
 }
-
+.iconMarginBottom {
+    margin-bottom: 3rem;
+}
 
 /* MAIN KLASSER */
 
