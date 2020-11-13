@@ -6,7 +6,11 @@ function main() {
     headerDropDownMenuUp2();
     headerDropDownMenuUp3();
     headerDropDownMenuUp4();
+    doThisLarger();
+    doThisLarger2();
+    doThisLarger3();
 }
+
 
 function headerDropDownMenu() {
     const header = document.querySelector('header')
@@ -72,4 +76,45 @@ function headerDropDownMenuUp4() {
             header.style.height = '100%'
         }
     }
+}
+
+
+
+
+
+function doThisLarger() {
+    const photo = document.getElementById('photo4')
+    
+
+    photo.onmouseover = function(){
+        photo.style.transform = 'scale(2.5)'    
+    }
+    photo.onmouseout = function(){
+        photo.style.transform = 'scale(1)'
+    }
+}
+
+function doThisLarger2() {
+    const photo = document.getElementById('photo3')
+    
+
+    photo.onmouseover = function(){
+        photo.style.transform = 'scale(2.5)'    
+    }
+    photo.onmouseout = function(){
+        photo.style.transform = 'scale(1)'
+    }
+}
+
+function doThisLarger3() {
+    const photo = document.getElementById('photo2')
+    
+
+    photo.onmouseover = function(){
+        photo.style.transform = 'scale(2.5)'    
+    }
+    photo.onmouseout = function(){
+        photo.style.transform = 'scale(1)'
+    }
+    
 }
