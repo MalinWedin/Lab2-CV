@@ -45,11 +45,17 @@ main {
     justify-content: center;
     align-items: center;
 }
+.list {
+    list-style-type: none;
+}
 
 
 /* header klasser */
 .menu {
+    
     display: none;
+    height: 40rem;
+   
     
 }
 
@@ -75,6 +81,10 @@ nav ul li {
 .width {
     width: 100%;
 }
+.paddingUl{
+    padding: 0;
+}
+
 .paddingHeader {
     padding: 1rem;
 }
@@ -97,6 +107,8 @@ nav ul li {
 .fas.fa-ellipsis-v {
     color: rgb(41, 40, 40);
     font-size: 2rem;
+   
+   
     
 }
 .hideThis{
@@ -105,12 +117,18 @@ nav ul li {
 .iconMarginBottom {
     margin-bottom: 3rem;
 }
+.drop-links {
+    text-decoration: none;
+    color: rgb(20, 20, 20);
+}
+
 
 /* MAIN KLASSER */
 
 .imgTop {
-    width: 100%;
+    width: 80%;
     height: auto;
+    margin-top: 8rem;
 }
 
 .mainWidth {
@@ -129,7 +147,7 @@ nav ul li {
 
 /* SE TILL ATT SIDAN ÄR RESPONSIV! */
 
-@media (max-width: 800px) {
+@media (max-width: 927px) {
    
     .fas.fa-ellipsis-v {
         display: unset;
@@ -141,4 +159,35 @@ nav ul li {
         display: none;
     }
 
+}
+
+@media (max-width: 550px){
+    .fas.fa-ellipsis-v {
+        display: unset;
+    }
+    .menu {
+        display: unset;
+    }
+    nav ul li {
+        display: none;
+    }
+    h4 {
+        font-size: 1.8rem;
+    }
+}
+
+
+@media (max-width: 320px){
+    .fas.fa-ellipsis-v {
+        display: unset;
+    }
+    .menu {
+        display: unset;
+    }
+    nav ul li {
+        display: none;
+    }
+    h4 {
+        font-size: 1rem;
+    }
 }
